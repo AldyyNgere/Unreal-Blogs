@@ -24,15 +24,17 @@
     <!-- HEADER  -->
     <header>
       <!-- Navbar  -->
-      <nav class="text-[#212529] flex justify-between py-4 px-5 items-center">
+      <nav
+        class="text-[#212529] flex justify-between py-4 px-9 max-sm:px-6 items-center"
+      >
         <a href="#">
-          <span class="font-semibold uppercase text-7 max-[431px]:text-xl"
+          <span class="font-semibold uppercase text-2xl max-[431px]:text-xl"
             >unreal blogs</span
           >
         </a>
 
         <ul
-          class="menu flex gap-5 text-[12px] items center font-light md:flex md:items-center z-100 md:static absolute w-full md:w-auto left-0 md:py-0 py-4 pl-7 md:pl-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-[#101113] text-white md:text-inherit md:bg-inherit"
+          class="menu flex gap-5 text-lg items center font-light md:flex md:items-center z-100 md:static absolute w-full md:w-auto left-0 md:py-0 py-8 pl-7 md:pl-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-[#101113] text-white md:text-inherit md:bg-inherit"
         >
           <li>
             <a href="#" class="hover:text-shadow-lg duration-200">Home</a>
@@ -45,7 +47,7 @@
           </li>
         </ul>
 
-        <div class="flex gap-2">
+        <div class="flex gap-2 text-xl">
           <a href="#"
             ><ion-icon
               name="logo-instagram"
@@ -71,23 +73,25 @@
 
     <!-- HERO SECTION  -->
     <section
-      class="flex items-center justify-center text-white text-center mb-7 max-[431px]:mb-10"
+      class="flex items-center justify-center text-white text-center mb-7 max-md:mb-20 max-sm:mb-10"
     >
       <div
-        class="bg-[url(/img/hero.jpg)] bg-cover bg-bottom h-[80vh] w-[95vw] rounded-lg pt-6 px-10 grayscale-[10%] flex justify-center flex-col items-center"
+        class="bg-[url(/img/hero.jpg)] bg-cover bg-bottom h-[80vh] max-[431px]:h-[100vh] w-[95vw] rounded-lg pt-6 px-10 grayscale-[10%] flex justify-center flex-col items-center"
       >
-        <h1 class="text-4xl max-[431px]:text-5xl font-medium mb-5">
+        <h1
+          class="text-7xl max-md:text-5xl max-[431px]:text-3xl font-medium mb-5"
+        >
           My Personal Blogs
         </h1>
         <p
-          class="text-[12px] max-[431px]:text-[14px] mb-5 w-95 max-[431px]:w-98"
+          class="text-md max-[431px]:text-lg max-[431px]:text-sm mb-7 w-150 max-[431px]:w-98"
         >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
           culpa? Commodi nam consequuntur officia iusto amet voluptatum quod!
         </p>
         <a
           href="#blogs"
-          class="py-2 px-3 text-[12px] max-[431px]:text-[14px] bg-white text-[#212529] rounded-sm font-medium hover:bg-[#dee2e6] duration-200"
+          class="py-2 px-3 text-lg max-[431px]:text-[14px] bg-white text-[#212529] rounded-sm font-medium hover:bg-[#dee2e6] duration-200"
           >My Blogs</a
         >
       </div>
@@ -96,22 +100,26 @@
 
     <!-- ABOUT ME  -->
     <section
-      class="h-[80vh] flex justify-center items-center p-5 max-[431px]:mb-10"
+      class="h-[80vh] max-[431px]:h-auto flex justify-center items-center px-10 max-md:px-0 max-[431px]:mb-10"
     >
-      <div class="flex gap-10 max-[431px]:gap-5 max-[431px]:flex-col">
-        <div class="px-8 py-8 pl-1">
+      <div
+        class="flex gap-5 max-[431px]:gap-5 max-[431px]:flex-col px-15 max-sm:px-10"
+      >
+        <div
+          class="px-8 max-md:px-5 max-[431px]:px-0 py-8 max-sm:py-0 pl-1 max-md:pl-0"
+        >
           <h2
-            class="text-3xl max-[431px]:text-4xl font-medium mb-2 max-[431px]:mb-4"
+            class="text-5xl max-md:text-5xl max-sm:text-4xl font-medium mb-5 max-[431px]:mb-4"
           >
             Hello There, Its Aldy
           </h2>
-          <p class="text-[12px] max-[431px]:text-[14px] mb-5">
+          <p class="text-lg max-md:text-sm mb-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia id
             deserunt dignissimos mollitia quisquam repellat deleniti
             consequuntur nihil, dolor earum qui iste. Pariatur quam facilis,
             molestiae culpa asperiores consequuntur veritatis.
           </p>
-          <div class="flex gap-2 max-[431px]:text-xl">
+          <div class="flex gap-2 text-2xl max-md:text-xl">
             <a href="#"
               ><ion-icon
                 name="logo-instagram"
@@ -130,7 +138,7 @@
         <div>
           <img
             src="img/about.jpg"
-            class="w-155 max-[431px]:w-140 rounded-lg grayscale-100"
+            class="w-250 max-sm:w-350 max-[431px]:w-140 rounded-lg grayscale-100"
             alt="me"
           />
         </div>
@@ -139,12 +147,17 @@
     <!-- ABOUT ME  END -->
 
     <!-- BLOGS SECTION  -->
-    <section id="blogs" class="flex gap-3 justify-center p-5 mb-10 flex-col">
-      <h3 class="text-2xl font-medium">Recent Blog Posts</h3>
-      <div class="grid grid-cols-3 gap-5">
+    <section
+      id="blogs"
+      class="flex gap-5 justify-center p-5 mb-10 max-sm-15 flex-col px-9"
+    >
+      <h3 class="text-4xl font-medium">Recent Blog Posts</h3>
+      <div
+        class="grid max-[431px]:flex max-[431px]:flex-wrap grid-cols-3 gap-5"
+      >
         <!-- CARDS -->
         <div
-          class="flex flex-col overflow-hidden w-full h-[300px] relative text-white rounded-lg"
+          class="flex flex-col overflow-hidden w-full h-[300px] max-sm:h-[320px] relative text-white rounded-lg"
         >
           <img
             src="img/test.jpg"
@@ -152,11 +165,11 @@
             alt=""
           />
           <div class="absolute bottom-10 left-5">
-            <h4 class="text-sm font-medium mb-1">The Blossoms</h4>
-            <p class="text-[10px] mb-3">
+            <h4 class="text-2xl font-medium mb-1">The Blossoms</h4>
+            <p class="text-sm mb-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ex!
             </p>
-            <a href="#" class="bg-[#212529] text-[10px] text-white px-3 py-1">
+            <a href="#" class="bg-[#212529] text-sm text-white px-3 py-1">
               Read Now
             </a>
           </div>
@@ -168,12 +181,12 @@
 
     <!-- FOOTER  -->
     <footer
-      class="flex justify-between items-center px-5 py-1 bg-[#101113] text-white"
+      class="flex justify-between items-center px-5 py-5 bg-[#101113] text-white"
     >
       <a href="#">
-        <span class="font-semibold uppercase text-7">unreal blogs</span>
+        <span class="font-semibold uppercase text-2xl">unreal blogs</span>
       </a>
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-2 text-2xl">
         <a href="#"
           ><ion-icon
             name="logo-instagram"
